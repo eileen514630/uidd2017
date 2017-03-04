@@ -12,14 +12,15 @@ body {
 	margin: 0; 
 	padding: 0;
 	}
-
-a.home:link {text-decoration:none;color:black}    
-a.home:visited {text-decoration:none;color:black} 
-a.home:hover {text-decoration:underline;color:#A9A9A9}   
-
-a.explanation:link {text-decoration:none;color:white}    
-a.explanation:visited {text-decoration:none;color:white} 
-a.explanation:hover {text-decoration:underline;color:#A9A9A9}   
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+a:hover {text-decoration:underline}
+a.home:link {color:black}    
+a.home:visited {color:black} 
+a.home:hover {color:#A9A9A9}   
+a.explanation:link {color:white}    
+a.explanation:visited {color:white} 
+a.explanation:hover {color:#A9A9A9} 
 
 h1 {
   font-size: 40pt;
@@ -109,8 +110,9 @@ h4 {
   color: gray;
   font-family:  Trebuchet MS;
   position: absolute;
-  top: 550px;
-  left: 750px
+  top: 560px;
+  left: 750px;
+  LINE-HEIGHT:5px;
 }
 
 img.src {
@@ -120,20 +122,109 @@ img.src {
   }
 
 footer { 
-  height: 50px;
+  height: 70px;
 	text-align: center;
   background: #E83556;
   position: relative;
   top: 700px;
 	}
 
+#phone {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:15px;
+  left:50px
+}
+#mail {
+  font-size:35px;
+  color:#61D0D4;
+  position:absolute;
+  top:19px;
+  left:300px
+}
+#fb {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:19px;
+  left:600px
+}
+#ig {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:19px;
+  left:800px
+}
+#gplus {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:19px;
+  left:1000px
+}
+#twi {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:19px;
+  left:1200px
+}
+#txt1{
+  font-size:12px;
+  font-family: Arial;
+  color:white;
+  position:absolute;
+  top:5px;
+  left:100px 
+}
+#txt2{
+  font-size:12px;
+  font-family: Arial;
+  color:white;
+  position:absolute;
+  top:22px;
+  left:100px 
+}
+#txt3{
+  font-size:12px;
+  font-family: Arial;
+  color:white;
+  position:absolute;
+  top:5px;
+  left:350px 
+}
+#txt4{
+  font-size:12px;
+  font-family: Arial;
+  color:white;
+  position:absolute;
+  top:35px;
+  left:350px;
+}
 
 
 
+ {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:15px;
+  left:50px
+}
+ {
+  font-size:40px;
+  color:#61D0D4;
+  position:absolute;
+  top:15px;
+  left:50px
+}
 </style>
 
 <head>
 	<title>Eileen's Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -144,7 +235,7 @@ footer {
 			<h2>- a newbie in web programming and designing</h2>
 	</section>
 
-	<div class="main supporting" id="zen-supporting" role="main">
+	<div>
 		<div>
 			<h3>Hello,</h3>
 			<h4>a bit about me:</h4>
@@ -154,10 +245,10 @@ footer {
       <div class="circle2"></div>
       <div class="circle3"></div>
       
-    <div class="explanation">
-	  <p id="res"><a class="explanation" href="https://eileen514630.github.io/uidd2017/resume">MY RESUME</a></p>
-      <p id="exp"><a class="explanation" href="https://eileen514630.github.io/uidd2017/experience">MY EXPERIENCE</a></p>
-      <p id="ski"><a class="explanation" href="https://eileen514630.github.io/uidd2017/skills">MY SKILLS</a></p>
+    <div>
+      <p id="res"><a class="explanation"  href="https://eileen514630.github.io/uidd2017/resume">MY RESUME</a></p>
+      <p id="exp"><a class="explanation"  href="https://eileen514630.github.io/uidd2017/resume">MY EXPERIENCE</a></p>
+      <p id="ski"><a class="explanation"  href="https://eileen514630.github.io/uidd2017/resume">MY SKILLS</a></p>
     </div>
 
     <div id="intro">
@@ -166,20 +257,26 @@ footer {
       <p>I am new to web programming.</p>
     </div>
       
-    <img src="https://goo.gl/84MWYR" style="position:absolute;top:220px;left:200px" 
-alt="my profile pic" width="380" height="380">
+    <img src="https://goo.gl/5CSx5n" style="position:absolute;top:220px;left:200px" 
+alt="my profile pic" width="400" height="400">
 
 
 		<footer>
-			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">Call</a>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">Email</a>
-			<a href="https://www.facebook.com/eileen514630" title="Facebook" class="zen-license">Facebook</a>
-			<a href="https://www.instagram.com/katieileench/" title="Instagram">Instagram</a>
-		</footer>
+      <p id="txt1">Call</p>
+      <p id="txt2">+886 910 895 800 </p>
+      <i class="fa fa-phone-square" id="phone"></i>
+      <p id="txt3">Email</p>
+      <a href="mailto:eileen514630@gmail.com" id="txt4" style="  a:hover;text-decoration:none">eileen514630@gmail.com</a>
+      <i class="fa fa-envelope" id="mail"></i>
+
+     <a href="https://www.facebook.com/eileen514630" title="Facebook"> <i class="fa fa-facebook" id="fb"></i></a>
+     <a href="https://www.instagram.com/katieileench/" title="Instagram"><i class="fa fa-instagram" id="ig"></i></a>
+      <a href="https://goo.gl/ldrAQX" title="Instagram"><i class="fa fa-google-plus" id="gplus"></i></a>
+      <a href="https://twitter.com/eileen514630" title="Twitter"><i class="fa fa-twitter" id="twi"></i></a>
+		
+      </footer>
 	</div>
   
 </div>
-
-
 </body>
 </html>
