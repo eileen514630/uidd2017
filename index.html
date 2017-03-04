@@ -1,159 +1,180 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+
 <style>
-<body> 
-div { 
-  background-color:#EAE5E5; 
-  width:1348px; 
-  height:1000px; 
-}
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+body { 
+	background: #EAE5E5 ; 
+	margin: 0; 
+	padding: 0;
+	}
+
+a.home:link {text-decoration:none;color:black}    
+a.home:visited {text-decoration:none;color:black} 
+a.home:hover {text-decoration:underline;color:#A9A9A9}   
 
 h1 {
-    color: black;
-    font-family: Trebuchet MS;
-    font-size: 30pt;
-    position:absolute; 
-    top:50px; 
-    left:150px;
+  font-size: 40pt;
+  color: #4D4D4D;
+  font-family:  Georgia;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 16pt;
+  color: black;
+  font-family:  Georgia;
+  position: absolute;
+  top: 140px;
+  left: 170px;
+}
 
-}
-p1  {
-    color: black;
-    font-family: Trebuchet MS;
-    font-size: 18pt;
-    position:absolute; 
-    top:120px; 
-    left:150px;
-}
-p2  {
-    color: black;
-    font-family: Trebuchet MS;
-    font-size: 80pt;
-    position:absolute; 
-    top:220px; 
-    left:640px;
-}
-p3  {
-    color: black;
-    font-family: Trebuchet MS;
-    font-size: 30pt;
-    position:absolute; 
-    top:320px; 
-    left:640px;
-    white-space:nowrap;
-    letter-spacing:5px
-}
-div {
-	margin: 0px 0;
-	width: 130px;
-	height: 10px;
-	line-height: 100px;
-	font-size: 12px;
-	font-weight: 90;
-    background-color: #E83556
-}
-.demo1 {
+h3 { 
+	font-size: 80pt;
+  color: #4D4D4D;
+  font-family:  Trebuchet MS;
+  position: absolute;
+  top: 80px;
+  left: 750px;
+	}
+h4 { 
+	font-size: 40pt;
+  color: #4D4D4D;
+  font-family:  Trebuchet MS;
+  position: absolute;
+  top: 240px;
+  left: 750px;
+	}
+
+.circle1, .circle2, .circle3 {
 	width: 120px;
 	height: 120px;
 	line-height: 200px;
-	border: 1px solid #E83556;
 	border-radius: 200px;
-    position:absolute; 
-    top:420px; 
-    left:640px;
+  position:absolute; 
+}
+.circle1{
+  top:420px; 
+  left:750px;
+  border: 1px solid #E83556;
+  background: #E83556
+}
+.circle2{
+  top:420px; 
+  left:890px;
+  border: 1px solid #61D0D4;
+  background: #61D0D4
+}
+.circle3{
+  top:420px; 
+  left:1030px;
+  border: 1px solid #D1C926;
+  background: #D1C926
 }
 
-.demo2 {
-	width: 120px;
-	height: 120px;
-	line-height: 200px;
-	border: 1px solid #61D0D4;
-	border-radius: 200px;
-    position:absolute; 
-    top:420px; 
-    left:780px;
-    background-color: #61D0D4
+.explanation{
+	font-size: 12pt;
+  color: white;
+  font-family:  Trebuchet MS;
+  position: absolute;
+  top: 455px;
+	}
+#res{
+  position:absolute;
+  left: 773px;
+  white-space:nowrap;
+}
+#exp{
+  position:absolute;
+  left: 895px;
+  white-space:nowrap
+}
+#ski{
+  position:absolute;
+  left: 1055px;
+  white-space:nowrap
+}
+#intro{
+	font-size: 12pt;
+  color: gray;
+  font-family:  Trebuchet MS;
+  position: absolute;
+  top: 550px;
+  left: 750px
 }
 
-.demo3 {
-	width: 120px;
-	height: 120px;
-	line-height: 200px;
-	border: 1px solid #D1C926;
-	border-radius: 200px;
-    position:absolute; 
-    top:420px; 
-    left:920px;
-    background-color: #D1C926
-}
+img.src {
+  position:absolute;
+  top:220px;
+  left:150px; 
+  }
+
+footer { 
+  height: 50px;
+	text-align: center;
+  background: #E83556;
+  position: relative;
+  top: 700px;
+	}
+
+
 
 
 </style>
+
+<head>
+	<title>Eileen's Website</title>
 </head>
+
 <body>
-<div style="background-color:#EAE5E5;height:700px;width:1348px">
-<h1><a href="https://eileen514630.github.io/uidd2017/">Eileen Pei-Yu Chen</a></h1>
-<p1>- Just a student</p1>
-<img src="https://goo.gl/84MWYR" 
-style="position:absolute;top:220px;left:150px" 
-alt="my profile pic" width="350" height="370">
+<div class="page-wrapper">
+
+	<section>
+    <h1><a class="home" href="https://eileen514630.github.io/uidd2017/">Eileen Pei-Yu Chen</a></h1>
+			<h2>- a newbie in web programming and designing</h2>
+	</section>
+
+	<div class="main supporting" id="zen-supporting" role="main">
+		<div>
+			<h3>Hello,</h3>
+			<h4>a bit about me:</h4>
+    <div>
+            
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      
+    <div class="explanation">
+			<p id="res">MY RESUME</p>
+      <p id="exp">MY EXPERIENCE</p>
+      <p id="ski">MY SKILLS</p>
+    </div>
+
+    <div id="intro">
+      <p>Hello there! I am Eileen.</p>
+      <p>I am a junior student majoring in psychology.</p>
+      <p>I am new to web programming.</p>
+    </div>
+      
+    <img src="https://goo.gl/84MWYR" style="position:absolute;top:220px;left:200px" 
+alt="my profile pic" width="380" height="380">
 
 
-<p2>Hello,</p2>
-<p3>a bit about me:</p3>
-
-<div class="demo1"></div>
-
-<div class="demo2"></div>
-
-<div class="demo3"></div>
-
-<p style="color: gray;
-    font-family: Trebuchet MS;
-    font-size: 12pt;
-    position:absolute; 
-    top:520px; 
-    left:640px;white-space:nowrap">Hi there! I am Eileen. </p>
-<p style="color: gray;
-    font-family: Trebuchet MS;
-    font-size: 12pt;
-    position:absolute; 
-    top:545px; 
-    left:640px;white-space:nowrap">I am a junior student majoring in psychology.</p>
-<p style="color: gray;
-    font-family: Trebuchet MS;
-    font-size: 12pt;
-    position:absolute; 
-    top:570px; 
-    left:640px;white-space:nowrap">I am new to web programming.</p>
-
-<style style="text/css">
-a{text-decoration:none;}
-a:hover{text-decoration:underline;}
-</style>
-
-
-<a style="font-size:12pt;
-position:absolute;top:433px;left:662px;color: white;white-space:nowrap;font-family: Trebuchet MS" href="https://eileen514630.github.io/uidd2017/resume">MY RESUME</a>
-<a style="font-size:12pt;
-position:absolute;top:433px;left:810px;color: white;white-space:nowrap;font-family: Trebuchet MS" href="https://eileen514630.github.io/uidd2017/work">MY WORK</a>
-<a style="font-size:12pt;
-position:absolute;top:433px;left:947px;color: white;white-space:nowrap;font-family: Trebuchet MS" href="https://eileen514630.github.io/uidd2017/skills">MY SKILLS</a>
+		<footer>
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">Call</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">Email</a>
+			<a href="https://www.facebook.com/eileen514630" title="Facebook" class="zen-license">Facebook</a>
+			<a href="https://www.instagram.com/katieileench/" title="Instagram">Instagram</a>
+		</footer>
+	</div>
+  
 </div>
-
-
-<div style="background-color:#E83556;height:120px;width:1348px">
-<a style="font-size:160%;position:absolute;top:700px;left:10px" href="https://www.facebook.com/eileen514630">My facebook</a>
-<a style="font-size:160%;position:absolute;top:730px;left:10px" href="https://www.instagram.com/katieileench/">My Instagram</a>
-</div>
-
-
-<div style="background-color:#EAE5E5;height:60px;width:1348px">
-</div>
-
-
-
 
 
 </body>
